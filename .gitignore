@@ -4,3 +4,4 @@
 .Ruserdata
 
 # extra files to ignore
+.DS_Store
