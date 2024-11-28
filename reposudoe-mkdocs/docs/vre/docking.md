@@ -1,8 +1,8 @@
 # Molecular Docking with Autodock-Vina-docker
 
-## Docker Installation
+## Docker Image Import
 
-First, we will download the custom Docker image from the following [link](https://udcgal-my.sharepoint.com/personal/carlos_fernandez_udc_es/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcarlos%5Ffernandez%5Fudc%5Fes%2FDocuments%2Fswapping%2Fmall%2Dlab%2Ddocking%2Dvina%2Dall%2D20241012A%2Etar%2Egz&parent=%2Fpersonal%2Fcarlos%5Ffernandez%5Fudc%5Fes%2FDocuments%2Fswapping&ga=1) and store it in the `data` folder. Afterwards, we will load the image into our Docker and check that everything is in order.
+First, we will download the custom Docker image from the following link **TBD** and store it in the `data` folder. Afterwards, we will load the image into our system and check that everything is in order.
 
 ```shell
 docker load -i mall-lab-docking-vina-all-20241012A.tar.gz
@@ -22,10 +22,10 @@ Once we have the image ready, we can perform the docking. This is a basic tutori
 
 Intermediate files will be generated in steps 1 through 4:
 
-- 1. Receptor in `pdbqt` format
-- 2. Ligand in `pdbqt` format
-- 3. Coordinates in `gpf` and `glg` formats for the receptor
-- 4. `map` files for creating interaction zones.
+1. Receptor in `pdbqt` format
+2. Ligand in `pdbqt` format
+3. Coordinates in `gpf` and `glg` formats for the receptor
+4. `map` files for creating interaction zones.
 
 ### Outputs:
 
@@ -36,6 +36,7 @@ Intermediate files will be generated in steps 1 through 4:
 ### Basic Molecular Docking Steps:
 
 #### 1. Prepare Receptor
+
 ```shell
 docker run -v $PWD:/data --rm mall-lab/docking-vina-all:v1.2.5 \
 prepare_receptor -r $receptor_pdb -o $receptor_pdbqt
