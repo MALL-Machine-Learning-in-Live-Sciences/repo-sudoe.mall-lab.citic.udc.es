@@ -454,9 +454,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-installation" class="md-nav__link">
+  <a href="#docker-image-import" class="md-nav__link">
     <span class="md-ellipsis">
-      Docker Installation
+      Docker Image Import
     </span>
   </a>
   
@@ -618,9 +618,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-installation" class="md-nav__link">
+  <a href="#docker-image-import" class="md-nav__link">
     <span class="md-ellipsis">
-      Docker Installation
+      Docker Image Import
     </span>
   </a>
   
@@ -753,8 +753,8 @@
 
 
 <h1 id="molecular-docking-with-autodock-vina-docker">Molecular Docking with Autodock-Vina-docker</h1>
-<h2 id="docker-installation">Docker Installation</h2>
-<p>First, we will download the custom Docker image from the following <a href="https://udcgal-my.sharepoint.com/personal/carlos_fernandez_udc_es/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcarlos%5Ffernandez%5Fudc%5Fes%2FDocuments%2Fswapping%2Fmall%2Dlab%2Ddocking%2Dvina%2Dall%2D20241012A%2Etar%2Egz&amp;parent=%2Fpersonal%2Fcarlos%5Ffernandez%5Fudc%5Fes%2FDocuments%2Fswapping&amp;ga=1">link</a> and store it in the <code>data</code> folder. Afterwards, we will load the image into our Docker and check that everything is in order.</p>
+<h2 id="docker-image-import">Docker Image Import</h2>
+<p>First, we will download the custom Docker image from the following link <strong>TBD</strong> and store it in the <code>data</code> folder. Afterwards, we will load the image into our system and check that everything is in order.</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </span>mall-lab-docking-vina-all-20241012A.tar.gz
 docker<span class="w"> </span>image<span class="w"> </span>ls
 </code></pre></div>
@@ -767,28 +767,12 @@ docker<span class="w"> </span>image<span class="w"> </span>ls
 </ul>
 <h3 id="intermediate-files">Intermediate Files</h3>
 <p>Intermediate files will be generated in steps 1 through 4:</p>
-<ul>
-<li>
 <ol>
 <li>Receptor in <code>pdbqt</code> format</li>
-</ol>
-</li>
-<li>
-<ol>
 <li>Ligand in <code>pdbqt</code> format</li>
-</ol>
-</li>
-<li>
-<ol>
 <li>Coordinates in <code>gpf</code> and <code>glg</code> formats for the receptor</li>
-</ol>
-</li>
-<li>
-<ol>
 <li><code>map</code> files for creating interaction zones.</li>
 </ol>
-</li>
-</ul>
 <h3 id="outputs">Outputs:</h3>
 <ul>
 <li>We save a <code>log</code> file with the output from Vina.</li>
