@@ -51,6 +51,7 @@ nav:
   - Virtual Research Environment:
     - Overview: vre/vre.md
     - Docker: vre/docker.md
+    - Molecular Docking: vre/docking.md
 
 markdown_extensions:
   - toc:
