@@ -1,0 +1,60 @@
+site_name: RePo-SUDOE
+
+copyright: Copyright &copy; 2024 - 2026 RePo-SUDOE –
+  <a href="#__consent">Cookies</a>
+
+theme:
+  name: material
+  favicon: logos/favicon.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  logo: logos/favicon.png
+  language: en
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+    - icon: fontawesome/brands/docker
+      link: https://docker.com/
+#  analytics:
+#    provider: google
+#    property: G-J3RS5DMQ4K
+  consent:
+    title: Cookies
+    description: >-
+      We use cookies to recognize your preferences and repeat visits, as well as to measure the effectiveness of the information displayed 
+      and whether users find what they are looking for. With your consent, you are helping our project improve. 
+nav:
+  - Home: index.md
+  - General Information:
+    - Summary: general/summary.md
+    - Beneficiaries: general/beneficiaries.md
+  - Virtual Research Environment:
+    - Overview: vre/vre.md
+    - Docker: vre/docker.md
+
+markdown_extensions:
+  - toc:
+      title: On this page
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
