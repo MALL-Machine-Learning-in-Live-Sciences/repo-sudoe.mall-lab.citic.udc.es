@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# extra files to ignore
