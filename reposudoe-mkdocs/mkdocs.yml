@@ -5,6 +5,7 @@ copyright: Copyright &copy; 2024 - 2026 RePo-SUDOE –
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: logos/favicon.png
   palette:
     # Palette toggle for light mode
