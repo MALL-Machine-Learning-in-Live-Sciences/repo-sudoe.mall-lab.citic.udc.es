@@ -50,6 +50,7 @@ nav:
     - Beneficiaries: general/beneficiaries.md
   - Virtual Research Environment:
     - Overview: vre/vre.md
+    - Drugs: vre/drugs.md
     - Docker: vre/docker.md
     - Molecular Docking: vre/docking.md
 
