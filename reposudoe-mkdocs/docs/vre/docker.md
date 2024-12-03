@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Docker Installation and Usage Guide
 
 Docker is a platform used to develop, ship, and run applications inside containers. This tutorial will guide you through the steps to install Docker and start using it.
